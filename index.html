@@ -3,17 +3,152 @@
 
 <head>
 
+    <!-- Metadados -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Title -->
     <title>Document</title>
 
 </head>
 
 <body>
-    
+
+    <!-- Header -->
+    <header class="header">
+        
+        <div class="container">
+            
+            <!-- Logotipo -->
+            <a href="index.html" class="grid-4">
+                <img src="img/bikcraft.svg" alt="Bikraft">
+            </a>
+
+            <!-- Menu -->
+            <nav class="header-menu grid-12">
+                <ul>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                    <li><a href="contato.html">Contanto</a></li>
+                </ul>
+            </nav>
+        
+        </div>
+    </header>
+
+    <!-- Introdução -->
+    <section class="introducao">
+        <div class="container">
+            <!-- Título -->
+            <h1>Bicicletas feitas à mão</h1>
+
+            <!-- Citação -->
+            <blockquote class="quote-externo">
+                <p>"Não tenha nada em sua casa que você não considere útil ou acredita ser bonito"</p>
+                <cite>William Morris</cite>
+            </blockquote>
+
+            <!-- Botão -->
+            <a href="produtos.html" class="btn">Orçamento</a>
+        </div>
+    </section>
+
+    <!-- Produtos -->
+    <section class="produtos container">
+        <!-- Subtítulo -->
+        <h2 class="subtitle">Produtos</h2>
+
+        <!-- Cards produtos -->
+        <ul class="produtos-lista">
+            
+            <!-- Passeio -->
+            <li class="grid-1-3">
+                
+                <!-- Icon -->
+                <div class="produtos-icone" >
+                    <img src="img/produtos/passeio.svg" alt="Bikcraft Passeio">
+                </div>
+
+                <!-- Content -->
+                <h3>Passeio</h3>
+
+                <p>Ainda assim, existem dúvidas a respeito de como a necessidade de renovação.</p>
+
+            </li>
+
+             <!-- Esporte -->
+             <li class="grid-1-3">
+                
+                <!-- Icon -->
+                <div class="produtos-icone" >
+                    <img src="img/produtos/esporte.svg" alt="Bikcraft Passeio">
+                </div>
+
+                <!-- Content -->
+                <h3>Esporte</h3>
+
+                <p>Ainda assim, existem dúvidas a respeito de como a necessidade de renovação.</p>
+                
+            </li>
+
+             <!-- Retro -->
+             <li class="grid-1-3">
+                
+                <!-- Icon -->
+                <div class="produtos-icone" >
+                    <img src="img/produtos/retro.svg" alt="Bikcraft Passeio">
+                </div>
+
+                <!-- Content -->
+                <h3>Retrô</h3>
+
+                <p>Ainda assim, existem dúvidas a respeito de como a necessidade de renovação.</p>
+                
+            </li>
+
+        </ul>
+
+        <!-- CTA -->
+        <div class="cta">
+            <p>Clique aqui e veja os detalhes dos produtos</p>
+            <a href="produtos.html" class="btn btn-preto">Produtos</a>
+        </div>
+
+    </section>
+
+    <!-- Portfólio -->
+    <section class="portfolio">
+        
+        <div class="container">
+            <!-- Subtítulo -->
+            <h2 class="subtitle">Portfólio</h2>
+
+            <!-- Galeria -->
+            <ul class="portfolio-lista">
+                <li class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bicicleta Retrô"></li>
+
+                <li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bicicleta Passeio"></li>
+
+                <li class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bicicleta Esporte"></li>
+            </ul>
+
+            <!-- CTA -->
+            <div class="cta">
+                <p>Conheça mais do nosso portfólio</p>
+                <a href="portfolio.html" class="btn">Portfólio</a>
+            </div>
+        </div>
+
+    </section>
+
 </body>
 
 </html>
