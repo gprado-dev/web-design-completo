@@ -109,6 +109,10 @@ HEADER -----------------------------------------------------
     color: var(--color-neutral-light);
 }
 
+.header-menu ul li a.active-menu {
+    color: var(--color-neutral-light);
+}
+
 /*//////////////////////////////////////////////////////////
 INTRODUÇÃO -------------------------------------------------
 //////////////////////////////////////////////////////////*/
@@ -253,7 +257,7 @@ QUALIDADE --------------------------------------------------
     height: 83px;
     background: url(../img/linhas.svg) no-repeat center;
     position: absolute;
-    top: 126px;
+    top: 190px;
     left: 164px;
     z-index: -1;
 }
@@ -264,6 +268,7 @@ QUALIDADE --------------------------------------------------
 
 .qualidade-lista {
     padding-top: 24px;
+    overflow: hidden; /* Clear fix */
 }
 
 .qualidade-lista li {
@@ -366,4 +371,84 @@ FOOTER -----------------------------------------------------
     background: var(--color-primary-normal);
     padding: 24px 0;
     color: var(--color-neutral-dark);
+}
+
+/*//////////////////////////////////////////////////////////
+ABOUT PAGE -------------------------------------------------
+//////////////////////////////////////////////////////////*/
+.marcacao {
+    color: red red red red red red red red;
+}
+/*//////////////////////////////////////////////////////////
+INTRODUÇÃO--------------------------------------------------
+//////////////////////////////////////////////////////////*/
+
+.introducao-interna {
+    width: 100%;
+    margin-top: 92px;
+    height: 160px;
+    text-align: center;
+    color: var(--color-neutral-light);
+    padding-top: 30px;
+}
+
+.interna-sobre {
+    background: url(../img/bg-sobre.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.introducao-interna h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.introducao-interna h1::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--color-neutral-light);
+    margin: 8px auto;
+}
+
+.subtitle-interno {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: .1em;
+    color: var(--color-neutral-dark);
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.subtitle-interno::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--color-neutral-dark);
+    margin: 8px 0;
+
+}
+
+.missao-sobre {
+    padding-top: 60px;
+}
+
+.missao-sobre p {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 1em;
+    padding-right: 64px;
+}
+
+.missao-sobre ul li {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.foto-equipe {
+    padding-top: 16px;
 }
